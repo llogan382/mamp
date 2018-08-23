@@ -9,13 +9,5 @@ try {
     exit;
 }
 
-try {
-    $results = $db->query("SELECT title, category, img FROM Media");// run the query to retreive DB items
-} catch (Exception $e) {
-    echo "Unable to retieve results";
-    exit;
-}
-
-$catalog = ($results->fetchAll(PDO::FETCH_ASSOC));
 
 ?>
